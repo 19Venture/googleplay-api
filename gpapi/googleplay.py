@@ -496,6 +496,7 @@ class GooglePlayAPI(object):
         return output
 
     def _deliver_data(self, url, cookies):
+        return url
         headers = self.getHeaders()
         response = requests.get(url, headers=headers,
                                 cookies=cookies, verify=ssl_verify,
